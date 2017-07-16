@@ -52,12 +52,13 @@ hr.star-primary:after {
 }
 
 hr.star-light {
-    border-color: white;
+    border-color: @star-color;
+    // border-color: white;
 }
 
 hr.star-light:after {
     background-color: @theme-success;
-    color: white;
+    color: @star-color;
 }
 
 hr.star-primary {
@@ -96,6 +97,10 @@ header {
 		.skills {
 			font-size: 1.25em;
 			font-weight: 300;
+
+			+ p {
+				font-size:1.10em;
+			}
 		}
 	}
 }
